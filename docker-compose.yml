@@ -1,0 +1,16 @@
+version: "3"
+
+services: 
+  frontend:
+    build: ./client
+    restart: unless-stopped
+    ports: 
+      - "3000:3000"
+    depends_on: 
+      - backend
+  
+  backend:
+    build: ./server
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
