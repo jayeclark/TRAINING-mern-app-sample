@@ -67,7 +67,7 @@ class App extends Component {
               <thead>
                 <tr>
                   <th>#</th>
-                  <th>Username</th>
+                  <th>Identifier</th>
                   <th>Email Address</th>
                 </tr>
               </thead>
